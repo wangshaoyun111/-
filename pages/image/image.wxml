@@ -1,0 +1,17 @@
+<!--pages/image/image.wxml-->
+<!-- 组件不传入src属性，默认也是有宽高的 -->
+<image></image>
+
+<image src="/image/微信图片_20210507152247.jpg"></image>
+
+<!-- scaleToFill 会拉伸图片，占满整个盒子，图片会变型 -->
+<image src="/image/微信图片_20210507152247.jpg" mode="scaleToFill"></image>
+
+<!-- aspectFit 将长边展示处理，保持缩放比例，会留白 -->
+<image src="/image/微信图片_20210507152247.jpg" mode="aspectFit"></image>
+
+<!-- aspectFill 将短边展示出来，保持缩放比，会裁剪 -->
+<image src="/image/微信图片_20210507152247.jpg" mode="aspectFill"></image>
+
+<!-- widthFix 保持缩放比例，宽不变，高自适应 -->
+<image src="/image/微信图片_20210507152247.jpg" mode="widthFix"></image>
