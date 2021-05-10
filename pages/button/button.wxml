@@ -1,0 +1,12 @@
+<!--pages/button/button.wxml-->
+<button type="warn">按钮</button>
+
+<button plain type="warn">按钮</button>
+
+<button plain type="warn" open-type="share">分享</button>
+<!-- 可以打开客服会话界面 -->
+<!-- 进入真机会话界面 -->
+<!-- 接收用户消息需要登录微信公众平台 ---功能---客服---网页端客服 -->
+<button plain type="warn" open-type="contact">客服</button>
+
+
