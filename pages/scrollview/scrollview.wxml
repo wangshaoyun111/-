@@ -1,0 +1,6 @@
+<!--pages/scrollview/scrollview.wxml-->
+<scroll-view scroll-y class="container">
+  <view>A</view>
+  <view>B</view>
+  <view>C</view>
+</scroll-view>

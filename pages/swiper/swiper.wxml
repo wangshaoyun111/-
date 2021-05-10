@@ -1,0 +1,14 @@
+<!--pages/swiper/swiper.wxml-->
+<!-- 轮播图 -->
+<swiper class="swiper" autoplay interval="2000" circular indicator-dots>
+  <!-- 轮播图每一项 -->
+  <swiper-item>
+    <view>A</view>
+  </swiper-item>
+  <swiper-item>
+    <view>B</view>
+  </swiper-item>
+  <swiper-item>
+    <view>C</view>
+  </swiper-item>
+</swiper>

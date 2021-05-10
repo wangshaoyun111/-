@@ -1,0 +1,7 @@
+<!--pages/home/home.wxml-->
+
+<view class="container">
+  <view hover-class="bgc">A</view>
+  <view>B</view>
+  <view>C</view>
+</view>

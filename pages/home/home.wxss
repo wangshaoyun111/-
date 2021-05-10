@@ -1,0 +1,23 @@
+/* pages/home/home.wxss */
+.container{
+  display: flex;
+  justify-content: space-around;
+}
+.container view {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+.container view:nth-child(1){
+  background-color: lightblue;
+}
+.container view:nth-child(2){
+  background-color: lightcoral;
+}
+.container view:nth-child(3){
+  background-color: lightgoldenrodyellow;
+}
+.bgc{
+  background-color: pink !important;
+}
