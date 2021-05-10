@@ -1,0 +1,10 @@
+<!--pages/text/text.wxml-->
+<!-- text 行内元素 -->
+<view>
+  请复制手机号
+  <text user-select>18333333333</text>
+</view>
+<text>18333333333</text>
+<!-- 解析 HTML 字符串 -->
+<!-- 作用类似于 v-html -->
+<rich-text nodes="<h4 style='color:red'>我是段落</h4>"></rich-text>

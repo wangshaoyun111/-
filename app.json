@@ -1,12 +1,13 @@
 {
-  "entryPagePath": "pages/swiper/swiper",
+  "entryPagePath": "pages/text/text",
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
     "pages/home/home",
     "pages/search/search",
     "pages/scrollview/scrollview",
-    "pages/swiper/swiper"
+    "pages/swiper/swiper",
+    "pages/text/text"
   ],
   "window": {
     "backgroundTextStyle": "light",
