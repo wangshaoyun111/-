@@ -1,0 +1,4 @@
+/* pages/view/view.wxss */
+.color{
+  color: lightgreen;
+}

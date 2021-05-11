@@ -1,5 +1,5 @@
 {
-  "entryPagePath": "pages/image/image",
+  "entryPagePath": "pages/view/view",
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
@@ -9,7 +9,8 @@
     "pages/swiper/swiper",
     "pages/text/text",
     "pages/button/button",
-    "pages/image/image"
+    "pages/image/image",
+    "pages/view/view"
   ],
   "window": {
     "backgroundTextStyle": "light",

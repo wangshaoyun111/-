@@ -1,0 +1,15 @@
+<!--pages/view/view.wxml-->
+<!-- 页面渲染 -->
+<view>
+  {{name}}
+</view>
+<!-- 在小程序中绑定属性值，不能用: -->
+<!-- 因为在vue 中: 是v-bind简写 -->
+<!-- 直接使用双大括号包裹就可以 -->
+<view class="{{color}}">
+  jerry
+</view>
+<view>{{1+1}}</view>
+<view>
+  {{15>10? '大于':'小于'}}
+</view>
