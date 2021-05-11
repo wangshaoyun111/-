@@ -1,0 +1,14 @@
+<!--pages/wxif/wxif.wxml-->
+<view wx:if="{{age===18}}">今年18岁</view>
+<view wx:elif="{{age<18}}">未成年</view>
+<view wx:else>成年了</view>
+
+<!-- block 不是组件，是一个渲染的标签而已 -->
+<!-- 不会渲染到结构中 -->
+<block wx:if="{{age===18}}">
+  <view>我叫 Tom</view>
+  <view>我今年18岁</view>
+  <view>我上大学了</view>
+</block>
+
+<view hidden="{{age !== 18}}">我今年18岁</view>

@@ -1,5 +1,5 @@
 {
-  "entryPagePath": "pages/event/event",
+  "entryPagePath": "pages/wxif/wxif",
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
@@ -11,7 +11,8 @@
     "pages/button/button",
     "pages/image/image",
     "pages/view/view",
-    "pages/event/event"
+    "pages/event/event",
+    "pages/wxif/wxif"
   ],
   "window": {
     "backgroundTextStyle": "light",
