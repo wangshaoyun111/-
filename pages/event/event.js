@@ -5,11 +5,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    age:11
   },
 
-  btnHandle(){
-    console.log(123);
+  changeAge(){
+    this.setData({
+      age: this.data.age + 1
+    })
+  },
+
+  btnHandle(e){
+    console.log(e);
   },
 
   inputHandle(e){

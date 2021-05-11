@@ -1,7 +1,13 @@
 <!--pages/event/event.wxml-->
 <!-- 事件绑定 -->
-<button bindtap="btnHandle">触发事件</button>
+<view class="container" bindtap="btnHandle">
+  <button>触发事件</button>
+</view>
+
 
 <!-- input 默认是没有闭合的，需要手动闭合 -->
 <!-- input 默认没有边框，手动添加 -->
 <input type="text" bindinput="inputHandle" />
+
+<text>{{age}}</text>
+<button bindtap="changeAge">改变 age</button>
