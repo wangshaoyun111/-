@@ -5,7 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    age:11
+    age:11,
+    val:''
+  },
+  // 输入框同步
+  valueChange(e){
+    this.setData({
+      val:e.detail.value
+    })
   },
   // 事件传参
   handlePrams(e){

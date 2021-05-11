@@ -17,3 +17,8 @@
 <!-- data-info="123" ， 自定义属性值就是传递的数据 -->
 <!-- 使用 e.target.dataset 获取传递数据 -->
 <button bindtap="handlePrams" data-info="123">事件传参</button>
+
+<!-- 实现同步第一步 -->
+<!-- 绑定事件，获取最新值 -->
+<input value="{{val}}" type="text" bindinput="valueChange"/>
+<view>{{val}}</view>
