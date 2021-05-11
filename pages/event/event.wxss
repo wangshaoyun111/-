@@ -1,0 +1,5 @@
+/* pages/event/event.wxss */
+input{
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}

@@ -1,5 +1,5 @@
 {
-  "entryPagePath": "pages/view/view",
+  "entryPagePath": "pages/event/event",
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
@@ -10,7 +10,8 @@
     "pages/text/text",
     "pages/button/button",
     "pages/image/image",
-    "pages/view/view"
+    "pages/view/view",
+    "pages/event/event"
   ],
   "window": {
     "backgroundTextStyle": "light",
