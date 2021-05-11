@@ -11,3 +11,9 @@
 
 <text>{{age}}</text>
 <button bindtap="changeAge">改变 age</button>
+<view>----------------------------------------------</view>
+<!-- 在小程序中需要给事件传递参数，需要使用 自定义属性方式 -->
+<!-- data-* ， *指传递数据名称 -->
+<!-- data-info="123" ， 自定义属性值就是传递的数据 -->
+<!-- 使用 e.target.dataset 获取传递数据 -->
+<button bindtap="handlePrams" data-info="123">事件传参</button>

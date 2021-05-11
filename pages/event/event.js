@@ -7,7 +7,11 @@ Page({
   data: {
     age:11
   },
-
+  // 事件传参
+  handlePrams(e){
+    console.log(e.target.dataset.info);
+  },
+  // 改变数据
   changeAge(){
     this.setData({
       age: this.data.age + 1
