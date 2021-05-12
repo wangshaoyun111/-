@@ -1,5 +1,5 @@
 {
-  "entryPagePath": "pages/wxif/wxif",
+  "entryPagePath": "pages/rpx/rpx",
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
@@ -12,7 +12,8 @@
     "pages/image/image",
     "pages/view/view",
     "pages/event/event",
-    "pages/wxif/wxif"
+    "pages/wxif/wxif",
+    "pages/rpx/rpx"
   ],
   "window": {
     "backgroundTextStyle": "light",

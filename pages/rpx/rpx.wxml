@@ -1,0 +1,17 @@
+<!--pages/rpx/rpx.wxml-->
+<view class="shop-item">
+  <view class="item-left">
+    <image class="shop-inage" src="../../image/微信图片_20210507152247.jpg"></image>
+  </view>
+  <view class="item-right">
+    <text class="item-title">香蕉</text>
+    <text class="item-info">香蕉简介</text>
+    <view class="price">
+      <view>
+        <text class="price-after">￥88.80</text>
+        <text class="price-before">￥98.80</text>
+      </view>
+      <text>x1</text>
+    </view>
+  </view>
+</view>
