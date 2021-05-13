@@ -1,2 +1,5 @@
 <!--pages/message/message.wxml-->
-<text>pages/message/message.wxml</text>
+<button type="warn" bindtap="getHandle">发起get请求</button>
+
+<button type="warn" bindtap="postHandle">发起post请求</button>
+

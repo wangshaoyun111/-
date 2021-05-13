@@ -8,6 +8,35 @@ Page({
 
   },
 
+  // 发起get请求
+  getHandle(){
+    wx.request({
+      url: 'https://www.escook.cn/api/get',
+      method:"GET",
+      data:{
+        id:2
+      },
+      success:({data:res})=>{
+        console.log(res);
+      }
+    })
+  },
+
+  // 发起post请求
+  postHandle(){
+    wx.request({
+      url: 'https://www.escook.cn/api/post',
+      method:'POST',
+      data:{
+        id:2,
+        name:'Tom'
+      },
+      success:({data:res})=>{
+        console.log(res);
+      }
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

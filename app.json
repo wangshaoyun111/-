@@ -22,7 +22,6 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "微信",
     "navigationBarTextStyle": "black",
-    "enablePullDownRefresh": true,
     "backgroundColor": "#555",
     "onReachBottomDistance": 100
   },
