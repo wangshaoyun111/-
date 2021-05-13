@@ -1,9 +1,11 @@
 {
-  "entryPagePath": "pages/rpx/rpx",
   "pages": [
+    "pages/home/home",
+    "pages/message/message",
+    "pages/profile/profile",
+    "pages/contact/contact",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/home/home",
     "pages/search/search",
     "pages/scrollview/scrollview",
     "pages/swiper/swiper",
@@ -16,10 +18,42 @@
     "pages/rpx/rpx"
   ],
   "window": {
-    "backgroundTextStyle": "light",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle": "black"
+    "navigationBarTitleText": "微信",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#555",
+    "onReachBottomDistance": 100
+  },
+  "tabBar": {
+    "selectedColor": "#ff1234",
+    "list":[
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/tabs/home.png",
+        "selectedIconPath": "/images/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "/images/tabs/message.png",
+        "selectedIconPath": "/images/tabs/message-active.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系我们",
+        "iconPath": "/images/tabs/contact.png",
+        "selectedIconPath": "/images/tabs/contact-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "/images/tabs/profile.png",
+        "selectedIconPath": "/images/tabs/profile-active.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
