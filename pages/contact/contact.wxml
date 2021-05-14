@@ -1,2 +1,14 @@
 <!--pages/contact/contact.wxml-->
-<text>pages/contact/contact.wxml</text>
+
+<!-- 声明式导航 -->
+<!-- 跳转到非 rabBar页面 -->
+<!-- navigate实现声明式导航跳转 -->
+<!-- open-type="navigate"指跳转到非tarBar页面 -->
+<navigator url="/pages/index/index?id=18&name=tom" open-type="navigate">跳转到 非rabBar页面</navigator>
+<!-- 跳转到tabBar页面 -->
+<!-- 主要事项往tarBar页面使用 navigator是不能传递参数 -->
+<navigator url="/pages/message/message?id=2&name=jerry" open-type="switchTab">跳转到 tarBar 页面</navigator>
+
+<!-- 编程式导航 -->
+<button type="primary" bindtap="toNoTabBar">非tarBar页面</button>
+<button type="primary" bindtap="toTabBar">tarBar页面</button>

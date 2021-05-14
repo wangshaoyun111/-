@@ -1,1 +1,4 @@
 /* pages/contact/contact.wxss */
+view button{
+  margin: 20rpx;
+}

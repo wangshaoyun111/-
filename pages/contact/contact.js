@@ -8,6 +8,21 @@ Page({
 
   },
 
+  // 跳转到非tarBar页面
+  toNoTabBar(){
+    wx.navigateTo({
+      url: '/pages/index/index?id=3&name=spike',
+    })
+  },
+
+  // 跳转到tarBar页面
+  // 不能往tarBar页面传参
+  toTabBar() {
+    wx.switchTab({
+      url: '/pages/message/message',
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
