@@ -1,7 +1,7 @@
 <!--pages/home/home.wxml-->
 
-<view class="container">
-  <view hover-class="bgc">A</view>
-  <view>B</view>
-  <view>C</view>
-</view>
+<swiper class="swiper-container" autoplay interval="2000" indicator-dots circular >
+  <swiper-item wx:for="{{swiperList}}" wx:key="id">
+    <image src="{{item.image}}"></image>
+  </swiper-item>
+</swiper>

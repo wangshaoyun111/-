@@ -2,7 +2,6 @@
   "pages": [
     "pages/home/home",
     "pages/message/message",
-    "pages/profile/profile",
     "pages/contact/contact",
     "pages/index/index",
     "pages/logs/logs",
@@ -15,18 +14,17 @@
     "pages/view/view",
     "pages/event/event",
     "pages/wxif/wxif",
-    "pages/rpx/rpx"
+    "pages/rpx/rpx",
+    "pages/get/get"
   ],
   "window": {
-    "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "微信",
-    "navigationBarTextStyle": "black",
-    "backgroundColor": "#555",
-    "onReachBottomDistance": 100
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2b4b6b",
+    "navigationBarTitleText": "本地生活",
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "selectedColor": "#ff1234",
+    "selectedColor": "#ed523c",
     "list":[
       {
         "pagePath": "pages/home/home",
@@ -45,12 +43,6 @@
         "text": "联系我们",
         "iconPath": "/images/tabs/contact.png",
         "selectedIconPath": "/images/tabs/contact-active.png"
-      },
-      {
-        "pagePath": "pages/profile/profile",
-        "text": "我的",
-        "iconPath": "/images/tabs/profile.png",
-        "selectedIconPath": "/images/tabs/profile-active.png"
       }
     ]
   },

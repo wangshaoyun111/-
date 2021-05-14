@@ -5,14 +5,42 @@ Page({
    * 页面的初始数据
    */
   data: {
+    swiperList:[], // 轮播图数据
+    cateList:[] // 分类数据
+  },
 
+  // 获取轮播图数据
+  getSwiperList(){
+    wx.request({
+      url: 'https://www.escook.cn/slides',
+      success:({data:res})=>{
+        console.log(res);
+        this.setData({
+          swiperList:res
+        })
+      }
+    })
+  },
+
+  // 获取九宫格数据
+  getGirdList(){
+    wx.request({
+      url: 'https://www.escook.cn/categories',
+      success:({data:res})=>{
+        console.log(res);
+        this.setData({
+          cateList:res
+        })
+      }
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getSwiperList()
+    this.getGirdList()
   },
 
   /**
