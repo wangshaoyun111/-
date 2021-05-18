@@ -8,6 +8,11 @@ Page({
 
   },
 
+
+  startPull(){
+    wx.startPullDownRefresh()
+  },
+  
   // 跳转到非tarBar页面
   toNoTabBar(){
     wx.navigateTo({

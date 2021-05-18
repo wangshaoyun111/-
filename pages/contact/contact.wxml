@@ -12,3 +12,6 @@
 <!-- 编程式导航 -->
 <button type="primary" bindtap="toNoTabBar">非tarBar页面</button>
 <button type="primary" bindtap="toTabBar">tarBar页面</button>
+
+<!-- 方法开启下拉刷新 -->
+<button type="warn" bindtap="startPull">下拉刷新</button>
