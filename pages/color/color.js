@@ -5,13 +5,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-    colorList:[] // 颜色列表
+    colorList:[], // 颜色列表
+    isLoading:false // 节流阀
   },
 
   // 获取颜色数据方法
   getColorList(){
     wx.showLoading({
       title: '数据加载中...',
+    })
+    this.setData({
+      isLoading:true
     })
     wx.request({
       url: 'https://www.escook.cn/api/color',
@@ -24,6 +28,10 @@ Page({
       },
       complete:()=>{
         wx.hideLoading()
+        // 重置节流阀
+        this.setData({
+          isLoading:false
+        })
       }
     })
   },
@@ -75,6 +83,8 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
+    if(this.data.isLoading) return
+
     this.getColorList()
   },
 
