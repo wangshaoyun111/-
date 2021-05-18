@@ -1,36 +1,29 @@
-// pages/home/home.js
+// pages/color/color.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    swiperList:[], // 轮播图数据
-    cateList:[] // 分类数据
+    colorList:[] // 颜色列表
   },
 
-  // 获取轮播图数据
-  getSwiperList(){
-    wx.request({
-      url: 'https://www.escook.cn/slides',
-      success:({data:res})=>{
-        console.log(res);
-        this.setData({
-          swiperList:res
-        })
-      }
+  // 获取颜色数据方法
+  getColorList(){
+    wx.showLoading({
+      title: '数据加载中...',
     })
-  },
-
-  // 获取九宫格数据
-  getGirdList(){
     wx.request({
-      url: 'https://www.escook.cn/categories',
+      url: 'https://www.escook.cn/api/color',
+      method:'GET',
       success:({data:res})=>{
         console.log(res);
         this.setData({
-          cateList:res
+          colorList:[...this.data.colorList,...res.data]
         })
+      },
+      complete:()=>{
+        wx.hideLoading()
       }
     })
   },
@@ -39,8 +32,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getSwiperList()
-    this.getGirdList()
+    // 获取调用颜色列表数据
+    this.getColorList()
   },
 
   /**
@@ -75,19 +68,14 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    // setTimeout(()=>{
-    //   wx.stopPullDownRefresh()
-    // },2000)
+
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-    console.log(123);
-    // 页码加一，
-    // 重新获取数据
-    // 把最新的数据和已有数据进行拼接
+    this.getColorList()
   },
 
   /**

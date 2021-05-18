@@ -1,0 +1,4 @@
+<!--pages/color/color.wxml-->
+<view class="colorlist" wx:for="{{colorList}}" wx:key="index" style="background-color:rgb({{item}})">
+  {{item}}
+</view>
