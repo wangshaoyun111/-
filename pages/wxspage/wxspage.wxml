@@ -1,0 +1,20 @@
+<!--pages/wxspage/wxspage.wxml-->
+<text>pages/wxspage/wxspage.wxml</text>
+<view>{{mo.toUpper("tom")}}</view>
+<view>{{mo1.toUpper("jerry")}}</view>
+<!-- 内嵌写法 -->
+<!-- 定义wxs标签 -->
+<!-- 需要定义moudle属性，这个属性就是模块名称 -->
+<!-- 访问内部成员，需要使用模块名.暴露出去得成员 -->
+<wxs module="mo">
+  function toUpper(str) {
+    return str.toUpperCase()
+  }
+  module.exports = {
+    toUpper:toUpper
+  }
+</wxs>
+<!-- 导入外联 wxs 文件 -->
+<!-- src 外联 wxs 文件路径 -->
+<!-- module模块名称 -->
+<wxs src="./wxs.wxs" module="mo1"></wxs>

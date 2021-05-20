@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/wxspage/wxspage",
     "pages/color/color",
     "pages/contact/contact",
     "pages/message/message",
