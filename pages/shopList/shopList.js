@@ -9,11 +9,18 @@ Page({
     shopList:[], // 商品列表数据
     page:1, // 请求页码
     pagesize:10, // 每次请求条数
-    total: 0 // 数据总数
+    total: 0, // 数据总数
+    isLoading:false // 节流阀
   },
 
   // 获取商品列表的方法
-  getShopList() {
+  getShopList(cb) {
+    this.setData({
+      isLoading:true
+    })
+    wx.showLoading({
+      title: '数据加载中...',
+    })
     wx.request({
       url: `https://www.escook.cn/categories/${this.data.query.id}/shops`,
       method:'GET',
@@ -27,6 +34,15 @@ Page({
           shopList:[...this.data.shopList,...data.data],
           total:data.header['X-Total-Count']
         })
+      },
+      complete:()=>{
+        // 隐藏loading，
+        wx.hideLoading()
+        // 重置loading
+        this.setData({
+          isLoading:false
+        })
+        cb&cb()
       }
     })
   },
@@ -85,15 +101,27 @@ Page({
       pagesize:10,
       total:0
     })
-    this.getShopList()
+    this.getShopList(()=>{
+      // 停止用户下拉
+      wx.stopPullDownRefresh()
+    })
   },
 
   /**
    * 页面上拉触底事件的处理函数 上拉加载更多
    */
   onReachBottom: function () {
+    const {isLoading,page,pagesize,total} = this.data
+    if (isLoading) return
+    if(page * pagesize >= total) {
+      wx.showToast({
+        title: '数据加载完毕',
+        icon: 'none'
+      })
+      return
+    }
     this.setData({
-      page:this.data.page+1,
+      page:page+1,
     })
     this.getShopList()
   },
