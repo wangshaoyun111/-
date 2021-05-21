@@ -24,7 +24,7 @@ Page({
       success:(data)=>{
         console.log(data);
         this.setData({
-          shopList:data.data,
+          shopList:[...this.data.shopList,...data.data],
           total:data.header['X-Total-Count']
         })
       }
@@ -76,17 +76,26 @@ Page({
   },
 
   /**
-   * 页面相关事件处理函数--监听用户下拉动作
+   * 页面相关事件处理函数--监听用户下拉动作 下拉刷新
    */
   onPullDownRefresh: function () {
-
+    // 重置数据
+    this.setData({
+      page:1,
+      pagesize:10,
+      total:0
+    })
+    this.getShopList()
   },
 
   /**
-   * 页面上拉触底事件的处理函数
+   * 页面上拉触底事件的处理函数 上拉加载更多
    */
   onReachBottom: function () {
-
+    this.setData({
+      page:this.data.page+1,
+    })
+    this.getShopList()
   },
 
   /**
