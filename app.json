@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/home/home",
     "pages/wxspage/wxspage",
     "pages/color/color",
     "pages/contact/contact",
     "pages/message/message",
-    "pages/home/home",
     "pages/logs/logs",
     "pages/index/index",
     "pages/search/search",
@@ -17,7 +17,8 @@
     "pages/event/event",
     "pages/wxif/wxif",
     "pages/rpx/rpx",
-    "pages/get/get"
+    "pages/get/get",
+    "pages/shopList/shopList"
   ],
   "window": {
     "backgroundTextStyle": "light",
