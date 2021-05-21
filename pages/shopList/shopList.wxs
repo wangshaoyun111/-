@@ -1,0 +1,10 @@
+function spiltPhone(str) {
+  if(str.length !== 11) return str
+  var newStr = str.split('')
+  newStr.splice(3,0,'-')
+  newStr.splice(8,0,'-')
+  return newStr.join('')
+}
+module.exports = {
+  spiltPhone:spiltPhone
+}

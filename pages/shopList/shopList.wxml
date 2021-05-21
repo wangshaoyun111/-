@@ -7,8 +7,9 @@
   </view>
   <view class="info">
     <text>{{item.name}}</text>
-    <text>电话：{{item.phone}}</text>
+    <text>电话：{{mo.spiltPhone(item.phone)}}</text>
     <text>地址：{{item.address}}</text>
     <text>营业时间：{{item.businessHours}}</text>
   </view>
 </view>
+<wxs src="./shopList.wxs" module="mo"></wxs>
