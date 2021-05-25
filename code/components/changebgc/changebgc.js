@@ -20,10 +20,17 @@ Component({
   },
 
   observers:{
-    'rgb.r,rgb.g,rgb.b':function(newR,newG,newB){
-      this.setData({
-        fullColor:`${newR},${newG},${newB}`
-      })
+    // 'rgb.r,rgb.g,rgb.b':function(newR,newG,newB){
+    //   this.setData({
+    //     fullColor:`${newR},${newG},${newB}`
+    //   })
+    // }
+    // 如果需要对对象中每一项进行监听,可以使用通配符 ** 监听所有对象的字段
+    // 监听器函数参数为 对象 ,对象有更新以后所有的值
+    'rgb.**':function(obj){
+        this.setData({
+          fullColor:`${obj.r},${obj.g},${obj.b}`
+        })
     }
   },
 
