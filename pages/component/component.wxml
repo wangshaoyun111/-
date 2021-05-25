@@ -1,0 +1,11 @@
+<!--pages/component/component.wxml-->
+<view>
+  <!-- 引入局部组件 -->
+  <my-com01 class="text" myid='123'></my-com01>
+</view>
+<view>
+  <!-- 引入全局组件 -->
+  <my-com02></my-com02>
+</view>
+
+

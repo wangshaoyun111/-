@@ -1,0 +1,3 @@
+<!--components/com01/com01.wxml-->
+<text>components/com01/com01.wxml</text>
+<button bindtap="changeData">修改数据</button>

@@ -1,0 +1,6 @@
+<!--component/com02/com02.wxml-->
+<text>component/com02/com02.wxml</text>
+
+<view>{{age}}</view>
+<view>{{name}}</view>
+<button bindtap="changeData">修改数据</button>

@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/component/component",
+    "pages/cart/cart",
     "pages/home/home",
     "pages/wxspage/wxspage",
     "pages/color/color",
@@ -25,6 +27,9 @@
     "navigationBarBackgroundColor": "#2b4b6b",
     "navigationBarTitleText": "本地生活",
     "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "my-com02":"./component/com02/com02"
   },
   "tabBar": {
     "selectedColor": "#ed523c",

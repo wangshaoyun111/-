@@ -1,0 +1,13 @@
+<!--component/com01/com01.wxml-->
+<!-- 在isolated 规则下，样式隔离影响，组件之间样式不互相影响 -->
+<!-- 在shared规则下，class 样式不受隔离影响，能够作用到子组件 -->
+<!-- 父组件和子组件有相同类名，权重相同，子组件会覆盖父组件样式 -->
+<text>component/com01/com01.wxml</text>
+
+<view>
+  {{age}} --- {{name}} --- {{myid}}
+</view>
+
+<button bindtap="btnHandle">触发事件</button>
+
+<button type="warn" bindtap="changeProps">修改 properties</button>

@@ -1,0 +1,4 @@
+/* component/com01/com01.wxss */
+.text{
+  color: greenyellow;
+}
