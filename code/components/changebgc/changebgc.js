@@ -19,10 +19,32 @@ Component({
     fullColor:'0,0,0'
   },
 
+  observers:{
+    'rgb.r,rgb.g,rgb.b':function(newR,newG,newB){
+      this.setData({
+        fullColor:`${newR},${newG},${newB}`
+      })
+    }
+  },
+
   /**
    * 组件的方法列表
    */
   methods: {
-
+    changeR () {
+      this.setData({
+        'rgb.r': this.data.rgb.r >= 255 ? '255' : this.data.rgb.r + 5
+      })
+    },
+    changeG () {
+      this.setData({
+        'rgb.g': this.data.rgb.g >= 255 ? '255' : this.data.rgb.g + 5
+      })
+    },
+    changeB () {
+      this.setData({
+        'rgb.b': this.data.rgb.b >= 255 ? '255' : this.data.rgb.b + 5
+      })
+    }
   }
 })

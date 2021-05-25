@@ -1,5 +1,5 @@
 <!--components/changebgc/changebgc.wxml-->
 <view class="container" style="background-color:rgb({{fullColor}})">{{fullColor}}</view>
-<button type="primary" size="mini">R</button>
-<button size="mini">G</button>
-<button type="warn" size="mini">B</button>
+<button class="btn" bindtap="changeR" type="primary" size="mini">R</button>
+<button class="btn" bindtap="changeG" size="mini">G</button>
+<button class="btn" bindtap="changeB" type="warn" size="mini">B</button>
