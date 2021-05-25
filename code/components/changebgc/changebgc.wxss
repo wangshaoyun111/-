@@ -1,0 +1,12 @@
+/* components/changebgc/changebgc.wxss */
+.container{
+  height: 200rpx;
+  text-align: center;
+  line-height: 200rpx;
+  background-color: lightblue;
+  color: #fff;
+  text-shadow: 1px 1px 5rpx #efefef;
+}
+button {
+  margin: 20rpx;
+}

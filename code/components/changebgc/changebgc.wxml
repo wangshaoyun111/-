@@ -1,0 +1,5 @@
+<!--components/changebgc/changebgc.wxml-->
+<view class="container" style="background-color:rgb({{fullColor}})">{{fullColor}}</view>
+<button type="primary" size="mini">R</button>
+<button size="mini">G</button>
+<button type="warn" size="mini">B</button>

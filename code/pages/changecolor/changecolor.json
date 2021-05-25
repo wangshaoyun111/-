@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "changebgc":"../../components/changebgc/changebgc"
+  }
+}
