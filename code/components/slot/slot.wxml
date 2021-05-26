@@ -1,0 +1,11 @@
+<!--components/slot/slot.wxml-->
+<text>components/slot/slot.wxml</text>
+
+<!-- 在小程序中默认只能够有一个 slot -->
+<slot name="before"></slot>
+
+<slot></slot>
+
+<slot name="after"></slot>
+
+

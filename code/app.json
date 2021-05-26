@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/slotpage/slotpage",
     "pages/changecolor/changecolor",
     "pages/home/home",
     "pages/index/index",
@@ -11,6 +12,11 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
   },
-  "style": "v2",
+  "usingComponents": {
+    "van-card": "./vant/card/index",
+    "van-button": "./vant/button/index",
+    "van-submit-bar": "./vant/submit-bar/index",
+    "van-tag": "./vant/tag/index"
+  },
   "sitemapLocation": "sitemap.json"
 }
