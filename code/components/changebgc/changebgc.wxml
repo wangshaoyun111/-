@@ -3,3 +3,6 @@
 <button class="btn" bindtap="changeR" type="primary" size="mini">R</button>
 <button class="btn" bindtap="changeG" size="mini">G</button>
 <button class="btn" bindtap="changeB" type="warn" size="mini">B</button>
+<view>
+  {{age}}
+</view>
