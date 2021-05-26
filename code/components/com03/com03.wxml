@@ -1,0 +1,2 @@
+<!-- components/com03/com03.wxml -->
+<button bindtap="handle" type="warn">触发事件</button>
