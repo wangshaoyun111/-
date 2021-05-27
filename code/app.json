@@ -1,9 +1,9 @@
 {
   "pages":[
+    "pages/home/home",
     "pages/transfer/transfer",
     "pages/slotpage/slotpage",
     "pages/changecolor/changecolor",
-    "pages/home/home",
     "pages/index/index",
     "pages/logs/logs"
   ],
@@ -19,6 +19,5 @@
     "van-submit-bar": "./vant/submit-bar/index",
     "van-tag": "./vant/tag/index"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

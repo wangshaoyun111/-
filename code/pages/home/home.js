@@ -8,6 +8,17 @@ Page({
 
   },
 
+  async setRequest(){
+    const res = await wx.p.request({
+      url:'https://www.escook.cn/api/get',
+      method:'GET',
+      data:{
+        name:'亚瑟'
+      }
+    })
+    console.log(res);
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
