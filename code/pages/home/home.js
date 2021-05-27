@@ -7,7 +7,7 @@ Page({
   data: {
 
   },
-
+  // promise的编译有问题，需要降低调试基础库版本才能使用
   async setRequest(){
     const res = await wx.p.request({
       url:'https://www.escook.cn/api/get',
