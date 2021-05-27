@@ -1,5 +1,7 @@
 // components/com03/com03.js
+const myBehaviors = require('../../utils/my-behaviors')
 Component({
+  behaviors:[myBehaviors],
   /**
    * 组件的属性列表
    */

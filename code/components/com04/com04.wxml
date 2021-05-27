@@ -1,0 +1,4 @@
+<!--components/com04/com04.wxml-->
+<text>components/com04/com04.wxml</text>
+<view>{{mynum}}</view>
+<view>{{age}}</view>

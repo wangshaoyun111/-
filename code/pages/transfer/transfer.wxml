@@ -3,3 +3,4 @@
 <!-- 事件对应事件处理程序，为父组件声明方法 -->
 <my-com03 id="sonid" class="sonclass" bind:myevent="getSonData"></my-com03>
 <button type="warn" bindtap="getSonComponent">获取子组件实例</button>
+<my-com04></my-com04>

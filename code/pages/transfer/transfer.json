@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "my-com03":"../../components/com03/com03"
+    "my-com03":"../../components/com03/com03",
+    "my-com04":"../../components/com04/com04"
   }
 }

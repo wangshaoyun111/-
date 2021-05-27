@@ -1,3 +1,7 @@
 <!-- components/com03/com03.wxml -->
+<view>{{myid}}</view>
+<view>{{mynum}}</view>
+<view>{{age}}</view>
+<view>{{name}}</view>
 <button bindtap="handle" type="warn">触发事件</button>
-{{myid}}
+<button bindtap="myHandle" type="warn">触发共享事件</button>

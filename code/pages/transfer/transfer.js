@@ -9,12 +9,13 @@ Page({
   },
 
   getSonComponent(){
-    // 在父组件中可以使用 this.selectAllComponents 获取子组件实例
+    // 在父组件中可以使用 this.selectComponent 获取子组件实例
     // 在获取得实例中包含子组件得所有实例和方法
     // 在父组件中可以直接调用
-    const sonComponent = this.selectAllComponents('#sonid')
-    console.log(sonComponent[0].data.myid);
-    sonComponent[0].changeMyid()
+    const sonComponent = this.selectComponent('.sonclass')
+    console.log(sonComponent);
+    console.log(sonComponent.data.myid);
+    sonComponent.changeMyid()
   },
   // 1.在父组件声明事件处理程序，需要传递给子组件，接收子组件传递数据
   getSonData(e){
