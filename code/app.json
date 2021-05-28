@@ -14,10 +14,10 @@
     "navigationBarTextStyle":"black"
   },
   "usingComponents": {
-    "van-card": "./vant/card/index",
-    "van-button": "./vant/button/index",
-    "van-submit-bar": "./vant/submit-bar/index",
-    "van-tag": "./vant/tag/index"
+    "van-card": "./miniprogram_npm/@vant/weapp/card",
+    "van-button": "./miniprogram_npm/@vant/weapp/button",
+    "van-submit-bar": "./miniprogram_npm/@vant/weapp/submit-bar",
+    "van-tag": "./miniprogram_npm/@vant/weapp/tag"
   },
   "sitemapLocation": "sitemap.json"
 }

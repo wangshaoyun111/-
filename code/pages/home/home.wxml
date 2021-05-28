@@ -5,3 +5,6 @@
 </view>
 <view>-----------------------------</view>
 <van-button bindtap="setRequest">请求数据</van-button>
+<view>{{numA}}</view>
+<view>{{numB}}</view>
+<button bindtap="changeNumA">修改numA</button>
