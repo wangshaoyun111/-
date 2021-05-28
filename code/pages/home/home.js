@@ -13,7 +13,6 @@ Page({
   // 创建方法修改store仓库数据
   changeNumA(){
     this.updataNumA(3)
-    console.log(this.data.sum);
   },
 
   // promise的编译有问题，需要降低调试基础库版本才能使用

@@ -1,2 +1,11 @@
 <!--components/com02/com02.wxml-->
-<text>components/com02/com02.wxml</text>
+<view>
+  {{numA}}
+</view>
+<view>
+  {{numB}}
+</view>
+<view>
+  {{sum}}
+</view>
+<button bindtap="changeNumA">修改数据</button>

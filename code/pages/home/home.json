@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "my-com01": "../../components/com01/com01",
+    "my-com02": "../../components/com02/com02",
     "van-button": "../../miniprogram_npm/@vant/weapp/button"
   }
 }

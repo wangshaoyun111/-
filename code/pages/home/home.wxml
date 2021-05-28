@@ -7,4 +7,8 @@
 <van-button bindtap="setRequest">请求数据</van-button>
 <view>{{numA}}</view>
 <view>{{numB}}</view>
+<view>{{sum}}</view>
 <button bindtap="changeNumA">修改numA</button>
+<view>
+  <my-com02></my-com02>
+</view>
