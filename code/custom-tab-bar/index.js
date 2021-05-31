@@ -8,7 +8,11 @@ Component({
   storeBindings:{
     store,
     fields:{
-      sum:'sum'
+      sum:'sum',
+      activeValue:'activeValue'
+    },
+    actions:{
+      changeActiveValue:'changeActiveValue'
     }
   },
   options:{
@@ -25,7 +29,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    active:0,
+    // active:0,
     list:[
       {
         pagePath: "/pages/home/home",
@@ -62,7 +66,8 @@ Component({
   methods: {
     onChange(event) {
       // event.detail 的值为当前选中项的索引
-      this.setData({ active: event.detail });
+      this.changeActiveValue(event.detail)
+      // this.setData({ active: event.detail });
       wx.switchTab({
         url: this.data.list[event.detail].pagePath,
       })

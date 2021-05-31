@@ -7,7 +7,7 @@ export const store = observable({
   // 创建两个全局共享数据
   numA: 1,
   numB: 2,
-
+  activeValue:0,
   // 计算属性的创建
   // 必须在计算属性前面加 get 关键字
   // 加上了 get 属性以后，代表只读属性的计算属性
@@ -22,5 +22,8 @@ export const store = observable({
   }),
   updateNumB:action(function (step) {
     this.numB -= step
+  }),
+  changeActiveValue:action(function(value){
+    this.activeValue = value
   })
 })
