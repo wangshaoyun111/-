@@ -5,8 +5,41 @@
     "pages/slotpage/slotpage",
     "pages/changecolor/changecolor",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/message/message",
+    "pages/contact/contact"
   ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2b4b6b",
+    "navigationBarTitleText": "本地生活",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#ed523c",
+    "backgroundColor": "#ffffff",
+    "custom": true,
+    "list":[
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/tabs/home.png",
+        "selectedIconPath": "/images/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "/images/tabs/message.png",
+        "selectedIconPath": "/images/tabs/message-active.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系我们",
+        "iconPath": "/images/tabs/contact.png",
+        "selectedIconPath": "/images/tabs/contact-active.png"
+      }
+    ]
+  },
   "subPackages": [
     {
       "root": "packageA",
@@ -25,25 +58,22 @@
       ],
       "independent": true
     }
-    
   ],
   "preloadRule": {
-    "pages/banana/banana":{
+    "pages/home/home": {
       "network": "all",
-      "packages": ["B"]
+      "packages": [
+        "B"
+      ]
     }
-  },
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle": "black"
   },
   "usingComponents": {
     "van-card": "./miniprogram_npm/@vant/weapp/card",
     "van-button": "./miniprogram_npm/@vant/weapp/button",
     "van-submit-bar": "./miniprogram_npm/@vant/weapp/submit-bar",
-    "van-tag": "./miniprogram_npm/@vant/weapp/tag"
+    "van-tag": "./miniprogram_npm/@vant/weapp/tag",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index"
   },
   "sitemapLocation": "sitemap.json"
 }
