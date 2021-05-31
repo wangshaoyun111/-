@@ -18,6 +18,9 @@ export const store = observable({
   updataNumA: action(function(step) {
     // 修改numA
     // 对全局修改 不是 this.setData 而是直接 this
-    this.numA = step
+    this.numA += step
+  }),
+  updateNumB:action(function (step) {
+    this.numB -= step
   })
 })

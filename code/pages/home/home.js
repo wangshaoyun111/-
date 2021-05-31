@@ -10,6 +10,14 @@ Page({
   data: {
 
   },
+  // 加1的方法
+  addHandle(){
+    this.updataNumA(1)
+  },
+  // 减一的方法
+  subHandle(){
+    this.updateNumB(1)
+  },
   // 创建方法修改store仓库数据
   changeNumA(){
     this.updataNumA(3)
@@ -36,7 +44,7 @@ Page({
     this.storeBindings = createStoreBindings(this,{
       store, // 将那个仓库映射到组件
       fields:['numA','numB','sum'], // 需要将 store 中的哪些数据映射到当前组件
-      actions:['updataNumA'] // 需要将store 中的那些action方法映射到当前组件
+      actions:['updataNumA','updateNumB'] // 需要将store 中的那些action方法映射到当前组件
     })
   },
 

@@ -12,3 +12,10 @@
 <view>
   <my-com02></my-com02>
 </view>
+<view>{{numA}} + {{numB}} = {{sum}}</view>
+<view>
+  <button type="primary" bindtap="addHandle">加1</button>
+</view>
+<view>
+  <button type="warn" bindtap="subHandle">减1</button>
+</view>
