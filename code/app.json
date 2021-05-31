@@ -27,6 +27,12 @@
     }
     
   ],
+  "preloadRule": {
+    "pages/banana/banana":{
+      "network": "all",
+      "packages": ["B"]
+    }
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
